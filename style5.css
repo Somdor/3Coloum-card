@@ -1,0 +1,120 @@
+@import url('http://fonts.googleapis.com/css2?family=Big+Shoulder+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    /* font-family: 'Big Shoulders Display' , cursive; */
+    font-family: 'Lexend Deca' ,sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    height: 1502px;
+    width:100vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+} 
+
+.container{
+   display: grid;
+   grid-template-columns:325px ;
+   grid-template-rows:440px 440px 440px ;
+   border-radius: 10px;
+   overflow: hidden;
+   /* border: 1px solid black; */
+}
+.iteam1{
+    background-color: hsl(31, 77%, 52%);
+}
+.iteam2{
+    background-color: hsl(184, 100%, 22%);
+}
+.iteam3{
+    background-color: hsl(179, 100%, 13%);
+}
+.sudan{
+     display: grid;
+     grid-template-rows:110px 220px 110px ;
+     grid-template-columns: 275px;
+     
+     padding-left: 40px;
+}
+.logo{
+    /* border: 1px solid red; */
+    padding-top:45px ;
+}
+.head{
+    /* border: 1px solid red; */
+    padding-top: 15px;
+}
+.head p{
+    Font-size: 15px;
+    font-weight: 600;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 150%;
+}
+.head h2{
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: hsl(0, 0%, 95%);
+     
+}
+.buttom{
+    padding-top: 10px;
+}
+.buttom a{
+    text-decoration: none;
+    color: white;
+}
+.buttom .learn{
+    align-items: left;
+    border: 2px solid white;
+    padding :1rem 1rem;
+    max-width:50%;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+}
+.buttom .btn1 a{
+     color:hsl(31, 77%, 52%) ;
+}
+.buttom .btn2 a{
+    color: hsl(184, 100%, 22%);
+}
+.buttom .btn3 a{
+    color: hsl(179, 100%, 13%);
+}
+.buttom .learn:hover{
+    background:transparent;
+    color: hsl(0, 0%, 95%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media(min-width:440px) and (max-width:768px){
+    .container{
+        width:auto;
+    }
+}
+@media (min-width:770px) and (max-width:1440px){
+    body{
+        height: 800px;
+        width:1440px;
+    }
+    .container{
+        display: grid;
+        height: 500px;
+        width: 918px;
+        grid-template-rows: 500px;
+        grid-template-columns:306px 306px 306px ;
+    }
+    .head p{
+        line-height: 200%;
+    }
+    .buttom{
+        padding-top: 70px;
+    }
+}
